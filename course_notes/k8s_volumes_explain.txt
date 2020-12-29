@@ -1,0 +1,8 @@
+Kube volumes are at pod level and don't survive pod restart. You don't want this for data to last.
+
+Persistent volumes can survive pod restart.
+
+Persistent volume claims are just advertisement. It is needed for persistent volumes.
+Where does K8s allocate persistent volumes? Determined by storage class.
+- standard (default storageclass): local disk of host computer
+- one of the cloud providers: Google, Amazon, Azure

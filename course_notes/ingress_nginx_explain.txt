@@ -1,0 +1,2 @@
+Use ingress nginx instead of normal nginx pod:
+- when using ingress nginx, it bypasses cluster-ip service of deployment and requests are sent directly to container replicas. This is to support things like sticky session.
